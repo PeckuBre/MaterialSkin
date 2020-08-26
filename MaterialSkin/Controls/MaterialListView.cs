@@ -79,7 +79,7 @@ namespace MaterialSkin.Controls
             //always draw default background
             g.FillRectangle(new SolidBrush(SkinManager.GetApplicationBackgroundColor()), new Rectangle(new Point(e.Bounds.X, 0), e.Bounds.Size));
 
-            if (e.State.HasFlag(ListViewItemStates.Selected))
+            if (e.Item.Selected)
             {
                 //selected background
                 g.FillRectangle(SkinManager.GetFlatButtonPressedBackgroundBrush(), new Rectangle(new Point(e.Bounds.X, 0), e.Bounds.Size));
